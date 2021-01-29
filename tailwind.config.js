@@ -80,7 +80,10 @@ module.exports = {
             pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
             bounce: "bounce 1s infinite",
         },
-        backgroundColor: theme => theme("colors"),
+        backgroundColor: theme => ({
+            ...theme("colors"),
+            primary: "#E74C3C",
+        }),
         backgroundImage: {
             none: "none",
             "gradient-to-t":
@@ -184,6 +187,7 @@ module.exports = {
         },
         fontFamily: {
             sans: [
+                "Montserrat",
                 "ui-sans-serif",
                 "system-ui",
                 "-apple-system",
@@ -217,6 +221,8 @@ module.exports = {
                 '"Courier New"',
                 "monospace",
             ],
+            primary: ["Montserrat"],
+            secondary: ["Quicksand"],
         },
         fontSize: {
             xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -245,7 +251,10 @@ module.exports = {
             black: "900",
         },
         gap: theme => theme("spacing"),
-        gradientColorStops: theme => theme("colors"),
+        gradientColorStops: theme => ({
+            ...theme("colors"),
+            primary: "#E74C3C",
+        }),
         gridAutoColumns: {
             auto: "auto",
             min: "min-content",
