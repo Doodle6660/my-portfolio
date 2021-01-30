@@ -1,12 +1,20 @@
 <template>
-    <div id="nav">
+    <!-- <div id="nav">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
-    </div>
+    </div> -->
     <router-view />
 </template>
 
-export default { components: { }, data () { return { } }, methods: { } }
+<script>
+export default {
+    components: {},
+    data() {
+        return {}
+    },
+    methods: {},
+}
+</script>
 
 <style>
 /* import fonts */
