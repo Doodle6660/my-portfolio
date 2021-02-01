@@ -25,7 +25,10 @@
         </div>
 
         <div class="hidden md:flex items-end justify-center w-full h-full z-50">
-            <img src="./../assets/image/avatar.png" class="avatar-image w-96" />
+            <img
+                src="./../assets/image/avatar.png"
+                class="avatar-image md:w-80 xl:w-96"
+            />
         </div>
 
         <app-bubble></app-bubble>
