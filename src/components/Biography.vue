@@ -1,8 +1,8 @@
 <template>
     <div class="flex h-screen w-full font-secondary py-10 justify-center">
-        <div class="bg-red-500 w-11/12 px-6 py-8 rounded-md">
+        <div class="bg-moon1 w-11/12 px-6 py-8 rounded-md">
             <p
-                class="w-3/4 xl:w-1/5 bg-white text-red-500 font-semibold text-2xl md:text-3xl px-2 py-2 rounded-sm mb-10"
+                class="w-3/4 xl:w-1/5 bg-white text-moon1 font-semibold text-2xl md:text-3xl px-2 py-2 rounded-sm mb-10"
             >
                 Biography .
             </p>
