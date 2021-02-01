@@ -83,6 +83,9 @@ module.exports = {
         backgroundColor: theme => ({
             ...theme("colors"),
             primary: "#E74C3C",
+            moon1: "#0F2027",
+            moon2: "#203A43",
+            moon3: "#2C5364",
         }),
         backgroundImage: {
             none: "none",
@@ -254,6 +257,10 @@ module.exports = {
         gradientColorStops: theme => ({
             ...theme("colors"),
             primary: "#E74C3C",
+            space: "#434343",
+            moon1: "#0F2027",
+            moon2: "#203A43",
+            moon3: "#2C5364",
         }),
         gridAutoColumns: {
             auto: "auto",
@@ -651,7 +658,12 @@ module.exports = {
             1: "1",
             2: "2",
         },
-        textColor: theme => theme("colors"),
+        textColor: theme => ({
+            ...theme("colors"),
+            moon1: "#0F2027",
+            moon2: "#203A43",
+            moon3: "#2C5364",
+        }),
         textOpacity: theme => theme("opacity"),
         transitionDuration: {
             DEFAULT: "150ms",
