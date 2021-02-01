@@ -56,7 +56,7 @@
             </div>
             <a
                 href="#!"
-                class="text-center font-semibold text-red-400 font-primary mb-24 md:mb-8"
+                class="text-center font-semibold text-moon2 font-primary mb-24 md:mb-8"
                 >See More >></a
             >
         </div>
