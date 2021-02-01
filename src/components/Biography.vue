@@ -1,12 +1,14 @@
 <template>
-    <div class="flex h-screen w-full font-secondary py-10 justify-center">
-        <div class="bg-moon1 w-11/12 px-6 py-8 rounded-md">
+    <div
+        class="flex h-screen w-full h-full font-secondary py-10 justify-center"
+    >
+        <div class="bg-moon1 w-11/12 h-full px-6 py-8 rounded-md">
             <p
                 class="w-3/4 xl:w-1/5 bg-white text-moon1 font-semibold text-2xl md:text-3xl px-2 py-2 rounded-sm mb-10"
             >
                 Biography .
             </p>
-            <div class="flex flex-row w-full">
+            <div class="flex flex-row w-full h-5/6">
                 <div class="flex flex-col w-1/2 md:w-1/4 text-white gap-6">
                     <p class="text-2xl md:text-4xl w-1/6 font-primary">
                         PERSONAL INFO
@@ -122,25 +124,25 @@
                         <p>Bojongsoang, Bandung</p>
                     </div>
                 </div>
-                <div
-                    class="flex flex-col w-1/2 md:w-3/4 text-white justify-between"
-                >
-                    <p class="text-2xl md:text-3xl font-semibold">
+                <div class="flex flex-col w-1/2 md:w-3/4 text-white gap-6">
+                    <p class="text-2xl md:text-3xl font-semibold mb-6">
                         Hi! I'm an 18-year-old maker who enjoys creating fun
                         stuff.
                     </p>
-                    <p>
-                        I am a Web and User Interface Designer based in Bandung,
-                        Indonesia, I love building simple & clean websites that
-                        are easy to use and beautiful to look at
+                    <p class="text-lg">
+                        I am a Web and User Interface Designer based in
+                        <span class="font-semibold">Bandung, Indonesia,</span> I
+                        love building simple & clean websites that are easy to
+                        use and beautiful to look at
                     </p>
-                    <p>
-                        I’ve been a big fan of programming computers ever since
-                        I was a lil' booger. The process of creating something
-                        out of nothing has always been what I loved most about
-                        it.
+                    <p class="text-lg">
+                        I’ve been a big fan of
+                        <span class="font-semibold">programming</span> computers
+                        ever since I was a lil' booger. The process of creating
+                        something out of nothing has always been what I loved
+                        most about it.
                     </p>
-                    <p>
+                    <p class="text-lg">
                         I love to draw. I don’t really drawing about anything in
                         particular, just whatever’s bouncing around in my head
                         or from anime which I just watched. You can check out
