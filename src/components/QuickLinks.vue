@@ -8,11 +8,21 @@
             <div
                 class="flex flex-row w-full justify-between px-4 md:px-24 xl:px-52 text-base md:text-xl"
             >
-                <a href="#!" class="text-red-400 font-semibold">Biography</a>
-                <a href="#!" class="text-blue-400 font-semibold"
+                <a
+                    href="#!"
+                    class="text-red-400 font-semibold border-2 border-red-400 px-2 py-1 xl:px-4 xl:py-2 rounded-sm rounded-tl-2xl rounded-br-2xl duration-300 hover:bg-red-400 hover:text-white quick-btn"
+                    >Biography</a
+                >
+                <a
+                    href="#!"
+                    class="text-blue-400 font-semibold border-2 border-blue-400 px-2 py-1 xl:px-4 xl:py-2 rounded-sm rounded-tl-2xl rounded-br-2xl duration-300 hover:bg-blue-400 hover:text-white quick-btn"
                     >Project Works</a
                 >
-                <a href="#!" class="text-green-400 font-semibold">Art Works</a>
+                <a
+                    href="#!"
+                    class="text-green-400 font-semibold border-2 border-green-400 px-2 py-1 xl:px-4 xl:py-2 rounded-sm rounded-tl-2xl rounded-br-2xl duration-300 hover:bg-green-400 hover:text-white quick-btn"
+                    >Art Works</a
+                >
             </div>
         </div>
 
@@ -57,4 +67,11 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.quick-btn:hover {
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+}
+</style>
