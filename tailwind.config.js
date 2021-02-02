@@ -83,6 +83,7 @@ module.exports = {
         backgroundColor: theme => ({
             ...theme("colors"),
             primary: "#E74C3C",
+            space: "#434343",
             moon1: "#0F2027",
             moon2: "#203A43",
             moon3: "#2C5364",
