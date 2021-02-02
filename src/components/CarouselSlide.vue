@@ -1,6 +1,6 @@
 <template>
-    <transition :name="dir">
-        <div v-show="visible">
+    <transition :name="direction">
+        <div v-show="visibleSlide === index" class="carousel-slide">
             <slot></slot>
         </div>
     </transition>
@@ -8,39 +8,52 @@
 
 <script>
 export default {
+    props: ["visibleSlide", "index", "direction"],
     data() {
-        return {
-            index: 0,
-        }
-    },
-    computed: {
-        visible() {
-            return this.index === this.$parent.index
-        },
-        dir() {
-            console.log(this.$parent.slideDirection)
-            return this.$parent.slideDirection
-        },
+        return {}
     },
 }
 </script>
 
 <style scoped>
-.slide-left-enter-active {
-    animation: slide-left-in 0.5s ease-in;
+.left-enter-active {
+    animation: leftInAnimation 0.5s ease-in-out;
 }
-.slide-left-leave-active {
-    animation: slide-left-out 0.5s ease-in;
+.left-leave-active {
+    animation: leftOutAnimation 0.5s ease-in-out;
 }
-@keyframes slide-left-in {
+@keyframes leftInAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes leftOutAnimation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.right-enter-active {
+    animation: rightInAnimation 0.5s ease-in-out;
+}
+.right-leave-active {
+    animation: rightOutAnimation 0.5s ease-in-out;
+}
+@keyframes rightInAnimation {
     from {
         transform: translateX(-100%);
     }
     to {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
-@keyframes slide-left-out {
+@keyframes rightOutAnimation {
     from {
         transform: translateX(0%);
     }
