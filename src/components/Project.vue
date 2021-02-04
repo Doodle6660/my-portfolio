@@ -7,7 +7,7 @@
                 :index="index"
                 :visibleSlide="visibleSlide"
                 :direction="direction"
-                class="carousel-slider"
+                class="carousel-slider flex justify-center items-center"
             >
                 <img :src="slide" :alt="slide" />
             </app-carousel-slide>
@@ -67,23 +67,24 @@ export default {
 
 <style>
 .carousel {
-    position: relative;
-    overflow: hidden;
-    width: 800px;
+    @apply relative;
+    @apply overflow-hidden;
+    @apply w-full;
     height: 500px;
-    z-index: 10;
+    @apply z-10;
 }
 
 .carousel-slider {
-    position: absolute;
-    top: 10;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @apply absolute;
+    @apply top-0;
+    @apply left-0;
+    @apply right-0;
+    @apply bottom-0;
 }
 
 .carousel-slider img {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 300px;
+    @apply rounded-xl;
 }
 </style>
