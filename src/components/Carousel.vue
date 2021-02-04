@@ -11,7 +11,7 @@
             <div class="flex w-1/2 justify-end gap-x-3 md:gap-x-5">
                 <button
                     @click="prev"
-                    class="bg-moon1 px-2 py-2 md:px-3 md:py-3 rounded-lg focus:outline-none"
+                    class="bg-moon1 px-2 py-2 md:px-3 md:py-3 rounded-lg focus:outline-none active:bg-moon2"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@
                 </button>
                 <button
                     @click="next"
-                    class="bg-moon1 px-2 py-2 md:px-3 md:py-3 rounded-md focus:outline-none"
+                    class="bg-moon1 px-2 py-2 md:px-3 md:py-3 rounded-md focus:outline-none active:bg-moon2"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
