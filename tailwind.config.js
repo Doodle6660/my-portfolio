@@ -848,6 +848,7 @@ module.exports = {
         extend: {
             opacity: ["disabled"],
             cursor: ["disabled"],
+            backgroundColor: ["active"],
         },
         fill: ["responsive"],
         flex: ["responsive"],
