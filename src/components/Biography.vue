@@ -1,8 +1,6 @@
 <template>
-    <div class="flex h-screen w-full font-secondary py-10 justify-center">
-        <div
-            class="bg-moon1 w-11/12 h-full px-2 md:px-6 py-6 md:py-8 rounded-md"
-        >
+    <div class="flex h-screen w-full font-secondary py-10 justify-center bio">
+        <div class=" w-11/12 h-full px-2 md:px-6 py-6 md:py-8 rounded-md">
             <p
                 class="w-3/4 xl:w-1/5 bg-white text-moon1 font-semibold text-2xl md:text-3xl px-2 py-2 rounded-sm mb-4 md:mb-10"
             >
@@ -10,7 +8,7 @@
             </p>
             <div class="flex flex-row w-full h-5/6 px-4">
                 <div
-                    class="flex flex-col w-1/2 md:w-2/6 text-white gap-6 text-xs md:text-base"
+                    class="flex flex-col w-1/2 md:w-2/6 text-moon1 gap-6 font-semibold text-xs md:text-base"
                 >
                     <p class="text-2xl md:text-4xl w-1/6 font-primary">
                         PERSONAL INFO
@@ -22,7 +20,7 @@
                             fill="none"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-white stroke-1"
+                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-moon1 stroke-1"
                         >
                             <path
                                 d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
@@ -38,7 +36,7 @@
                             fill="none"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-white stroke-1"
+                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-moon1 stroke-1"
                         >
                             <path
                                 d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
@@ -54,7 +52,7 @@
                             fill="none"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-white stroke-1"
+                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-moon1 stroke-1"
                         >
                             <path
                                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
@@ -69,7 +67,7 @@
                             fill="none"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-white stroke-1"
+                            class="w-4 h-4 md:w-8 md:h-8 stroke-current text-moon1 stroke-1"
                         >
                             <circle cx="12" cy="10" r="3" />
                             <path
@@ -80,7 +78,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex flex-col w-1/2 md:w-4/6 text-white gap-3 md:gap-6 text-xs md:text-xl ml-3 md:ml-0"
+                    class="flex flex-col w-1/2 md:w-4/6 text-moon1 gap-3 md:gap-6 text-xs md:text-xl ml-3 md:ml-0"
                 >
                     <p class="text-base md:text-3xl font-semibold mb-3 md:mb-6">
                         Hi! I'm an 18-year-old maker who enjoys creating fun
@@ -116,4 +114,8 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.bio {
+    background: url("./../assets/image/paper.jpg");
+}
+</style>
