@@ -1,5 +1,7 @@
 <template>
-    <div class="flex h-screen w-full font-frimary justify-center px-4 md:px-0">
+    <div
+        class="flex h-screen w-full font-frimary justify-center px-4 md:px-0 footer"
+    >
         <div class="flex flex-col justify-center items-center">
             <p class="text-xl md:text-5xl font-semibold mb-14">
                 And that's me, in a nutshell.
@@ -33,4 +35,14 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.footer {
+    background: linear-gradient(
+            135deg,
+            rgba(32, 58, 67, 0.2) 0%,
+            rgba(15, 32, 39, 0.3) 100%
+        ),
+        url("./../assets/image/paper.jpg") center no-repeat;
+    background-size: cover;
+}
+</style>
